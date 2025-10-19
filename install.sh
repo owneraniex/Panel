@@ -46,8 +46,8 @@ function print_warning() {
 
 # --- CHECK ROOT ---
 if [[ $EUID -ne 0 ]]; then
-   echo "This script must be run as root. Elevating to root..."
-   exec sudo "$0" "$@"
+   print_error "This script must be run as root" 
+   exit 1
 fi
 
 # --- OS DETECTION ---
