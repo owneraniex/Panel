@@ -30,7 +30,7 @@ This script automates the installation of the [Pterodactyl Panel](https://pterod
 To run the script, you can use the following command:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/owneraniex/Panel/main/install.sh)
+curl -s https://raw.githubusercontent.com/owneraniex/Panel/main/install.sh | sudo bash
 ```
 
 The script will guide you through the installation process. You will be prompted to choose what you want to install (Panel, Wings, or both) and to provide some information, such as a database password.
